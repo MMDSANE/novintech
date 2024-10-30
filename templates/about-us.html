@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fa">
     <head>
@@ -17,18 +18,18 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
         <!-- Libs and Plugins CSS -->
-        <link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css" />
+        <link rel="stylesheet" href="{% static "vendor/normalize/normalize.min.css" %}" />
         <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
-        <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css" />
+        <link rel="stylesheet" href="{% static "vendor/fontawesome/css/fontawesome-all.min.css" %}" />
         <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-        <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="{% static "vendor/swiper/css/swiper-bundle.min.css" %}" />
         <!-- Swiper CSS (https://swiperjs.com/) -->
-        <link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css" />
+        <link rel="stylesheet" href="{% static "vendor/lightgallery/css/lightgallery.min.css" %}" />
         <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
 
         <!-- Template master CSS -->
-        <link rel="stylesheet" href="assets/css/helper.css" />
-        <link rel="stylesheet" href="assets/css/theme.css" />
+        <link rel="stylesheet" href="{% static "css/helper.css" %}" />
+        <link rel="stylesheet" href="{% static "css/theme.css" %}" />
     </head>
 
     <!-- ===========
@@ -52,7 +53,7 @@
                 <div class="ptr-preloader">
                     <div class="ptr-prel-content">
                         <!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-                        <img src="assets/img/logo-light.png" class="ptr-prel-image tt-logo-light" alt="لوگو" />
+                        <img src="{% static "img/logo-light.png" %}" class="ptr-prel-image tt-logo-light" alt="لوگو" />
                     </div>
                     <!-- /.ptr-prel-content -->
                 </div>
@@ -86,9 +87,9 @@
                             <div class="tt-logo">
                                 <a href="index.html">
                                     <!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-                                    <img src="assets/img/logo-light.png" class="tt-logo-light magnetic-item" alt="لوگو" />
+                                    <img src="{% static "/img/logo-light.png" %}" class="tt-logo-light magnetic-item" alt="لوگو" />
                                     <!-- logo light -->
-                                    <img src="assets/img/logo-dark.png" class="tt-logo-dark magnetic-item" alt="لوگو" />
+                                    <img src="{% static "/img/logo-dark.png" %}" class="tt-logo-dark magnetic-item" alt="لوگو" />
                                     <!-- logo dark -->
                                 </a>
                             </div>
@@ -402,7 +403,7 @@
 							============================= -->
                             <div class="ph-image">
                                 <div class="ph-image-inner">
-                                    <img src="assets/img/page-header/ph-4.jpg" alt="تصویر" />
+                                    <img src="{% static "/img/page-header/ph-4.jpg" %}" alt="تصویر" />
                                 </div>
                             </div>
                             <!-- End page header image -->
@@ -524,7 +525,7 @@
                                             <div class="swiper-slide">
                                                 <div class="tt-content-carousel-item">
                                                     <figure>
-                                                        <img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-1.jpg" alt="تصویر" />
+                                                        <img class="tt-cc-image swiper-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/misc/misc-1.jpg" %}" alt="تصویر" />
                                                         <!-- <figcaption>زیرنویس تصویر</figcaption> -->
                                                     </figure>
                                                 </div>
@@ -537,7 +538,7 @@
                                             <div class="swiper-slide">
                                                 <div class="tt-content-carousel-item">
                                                     <figure>
-                                                        <img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-2.jpg" alt="تصویر" />
+                                                        <img class="tt-cc-image swiper-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/misc/misc-2.jpg" %}" alt="تصویر" />
                                                         <!-- <figcaption>زیرنویس تصویر</figcaption> -->
                                                     </figure>
                                                 </div>
@@ -551,8 +552,8 @@
                                                 <div class="tt-content-carousel-item">
                                                     <figure>
                                                         <video class="tt-cc-video" loop muted preload="metadata" poster="assets/vids/office-team.jpg">
-                                                            <source src="assets/vids/office-team.mp4" type="video/mp4" />
-                                                            <source src="assets/vids/office-team.webm" type="video/webm" />
+                                                            <source src="{% static "/vids/office-team.mp4" %}" type="video/mp4" />
+                                                            <source src="{% static "/vids/office-team.webm" %}" type="video/webm" />
                                                         </video>
                                                     </figure>
                                                 </div>
@@ -565,7 +566,7 @@
                                             <div class="swiper-slide">
                                                 <div class="tt-content-carousel-item">
                                                     <figure>
-                                                        <img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-3.jpg" alt="تصویر" />
+                                                        <img class="tt-cc-image swiper-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/misc/misc-3.jpg" %}" alt="تصویر" />
                                                         <!-- <figcaption>زیرنویس تصویر</figcaption> -->
                                                     </figure>
                                                 </div>
@@ -578,7 +579,7 @@
                                             <div class="swiper-slide">
                                                 <div class="tt-content-carousel-item">
                                                     <figure>
-                                                        <img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-4.jpg" alt="تصویر" />
+                                                        <img class="tt-cc-image swiper-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/misc/misc-4.jpg" %}" alt="تصویر" />
                                                         <!-- <figcaption>زیرنویس تصویر</figcaption> -->
                                                     </figure>
                                                 </div>
@@ -591,7 +592,7 @@
                                             <div class="swiper-slide">
                                                 <div class="tt-content-carousel-item">
                                                     <figure>
-                                                        <img class="tt-cc-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-5.jpg" alt="تصویر" />
+                                                        <img class="tt-cc-image swiper-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/misc/misc-5.jpg" %}" alt="تصویر" />
                                                         <!-- <figcaption>زیرنویس تصویر</figcaption> -->
                                                     </figure>
                                                 </div>
@@ -975,67 +976,67 @@
                                 <ul class="tt-logo-wall anim-fadeinup">
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-1-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-1-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-1-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-1-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-2-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-2-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-2-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-2-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-3-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-3-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-3-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-3-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-4-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-4-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-4-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-4-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-5-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-5-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-5-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-5-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-6-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-6-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-6-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-6-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-7-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-7-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-7-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-7-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-8-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-8-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-8-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-8-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-9-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-9-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-9-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-9-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="cursor-alter" target="_blank" rel="noopener">
-                                            <img src="assets/img/clients/client-10-light.png" class="lv-client-light" alt="مشتری" />
-                                            <img src="assets/img/clients/client-10-dark.png" class="lv-client-dark" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-10-light.png" %}" class="lv-client-light" alt="مشتری" />
+                                            <img src="{% static "/img/clients/client-10-dark.png" %}" class="lv-client-dark" alt="مشتری" />
                                         </a>
                                     </li>
 
                                     <!-- Use the below example if you want a list without links -->
-                                    <!-- <li><img src="assets/img/clients/client-1.png" alt="مشتری"></li> -->
+                                    <!-- <li><img src="{% static "/img/clients/client-1.png" %}" alt="مشتری"></li> -->
                                 </ul>
                                 <!-- End logo wall -->
                             </div>
@@ -1058,7 +1059,7 @@
 								-->
                                 <div class="tt-image tti-fixed-height">
                                     <figure>
-                                        <img class="anim-image-parallax tt-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-6.jpg" alt="تصویر" />
+                                        <img class="anim-image-parallax tt-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/misc/misc-6.jpg" %}" alt="تصویر" />
                                         <figcaption>
                                             زیرنویس تصویر
                                         </figcaption>
@@ -1176,33 +1177,33 @@
 		===================== -->
 
         <!-- Core JS -->
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="{% static "/vendor/jquery/jquery.min.js" %}"></script>
         <!-- jquery JS (https://jquery.com) -->
 
         <!-- Libs and Plugins JS -->
-        <script src="assets/vendor/gsap/gsap.min.js"></script>
+        <script src="{% static "/vendor/gsap/gsap.min.js" %}"></script>
         <!-- GSAP JS (https://greensock.com/gsap/) -->
-        <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
+        <script src="{% static "/vendor/gsap/ScrollToPlugin.min.js" %}"></script>
         <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
-        <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+        <script src="{% static "/vendor/gsap/ScrollTrigger.min.js" %}"></script>
         <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
 
-        <script src="assets/vendor/smooth-scrollbar.js"></script>
+        <script src="{% static "/vendor/smooth-scrollbar.js" %}"></script>
         <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
-        <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
+        <script src="{% static "/vendor/swiper/js/swiper-bundle.min.js" %}"></script>
         <!-- Swiper JS (https://swiperjs.com/) -->
-        <script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="{% static "/vendor/isotope/imagesloaded.pkgd.min.js" %}"></script>
         <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
-        <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+        <script src="{% static "/vendor/isotope/isotope.pkgd.min.js" %}"></script>
         <!-- Isotope JS (http://isotope.metafizzy.co) -->
-        <script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script>
+        <script src="{% static "/vendor/isotope/packery-mode.pkgd.min.js" %}"></script>
         <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
-        <script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script>
+        <script src="{% static "/vendor/lightgallery/js/lightgallery-all.min.js" %}"></script>
         <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
-        <script src="assets/vendor/jquery.mousewheel.min.js"></script>
+        <script src="{% static "/vendor/jquery.mousewheel.min.js" %}"></script>
         <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
 
         <!-- Template master JS -->
-        <script src="assets/js/theme.js"></script>
+        <script src="{% static "/js/theme.js" %}"></script>
     </body>
 </html>
