@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     "landing.apps.LandingConfig",
     "about_us.apps.AboutUsConfig",
     "about_me.apps.AboutMeConfig",
+    "blog.apps.BlogConfig",
+    "post.apps.PostConfig",
+    "cooperation.apps.CooperationConfig",
+    "contact_us.apps.ContactUsConfig",
 
 ]
 
