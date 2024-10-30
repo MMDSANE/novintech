@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # our apps
     "landing.apps.LandingConfig",
     "about_us.apps.AboutUsConfig",
+    "about_me.apps.AboutMeConfig",
+
 ]
 
 MIDDLEWARE = [
