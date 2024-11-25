@@ -280,14 +280,14 @@
 							-->
                             <div class="ph-caption max-width-1000">
                                 <div class="ph-caption-subtitle">
-                                    <div class="ph-appear">مقالات و اخبار</div>
+                                    <div class="ph-appear">کوییز</div>
                                 </div>
                                 <h1 class="ph-caption-title">
-                                    <div class="ph-appear">وبلاگ</div>
+                                    <div class="ph-appear">مسابقات و امتحانات</div>
                                     <!-- You can use <br> to break a text line if needed -->
                                 </h1>
                                 <div class="ph-caption-title-ghost">
-                                    <div class="ph-appear">وبلاگ</div>
+                                    <div class="ph-appear">کوییز</div>
                                 </div>
                             </div>
                             <!-- End page header caption -->
@@ -329,7 +329,7 @@
 									========================== -->
                                     <article class="blog-list-item">
                                         <!-- Begin blog list item image -->
-                                        <a href="question.html" class="bli-image-wrap" data-cursor="بیشتر<br>بخوانید">
+                                        <a href="{% url "question:question" %}" class="bli-image-wrap" data-cursor="سوال<br>مشاهده">
                                             <figure class="bli-image">
                                                 <img src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/list/compact/blog-list-1.jpg" %}" class="tt-lazy anim-zoomin" alt="تصویر" />
                                             </figure>
@@ -339,20 +339,20 @@
                                         <!-- Begin blog list item info -->
                                         <div class="bli-info">
                                             <div class="bli-categories">
-                                                <a href="blog-archive.html">سبک زندگی</a>
+                                                <a href="{% url "question:question" %}">Python</a>
                                                 <!-- <a href="blog-archive.html">Uncategorized</a> -->
                                             </div>
-                                            <h2 class="bli-title"><a href="question.html">5 تکنیک شگفت انگیز برای بهبود خلاقیت شما</a></h2>
+                                            <h2 class="bli-title"><a href="{% url "question:question" %}">مسابقه موش و پنیر هوشمند</a></h2>
                                             <div class="bli-meta">
                                                 <span class="published">21 آبان 1401</span>
-                                                <span class="posted-by">- توسط <a href="blog-archive.html" title="مشاهده همه پست های سورنا شهابی">سورنا شهابی</a></span>
+                                                <span class="posted-by">- توسط <a href="{% url "question:question" %}" title="محمدحسین مهارلویی">محمدحسین مهارلویی</a></span>
                                             </div>
                                             <div class="bli-desc">
                                                 <!-- 3 lines is optimal! -->
                                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
                                                 نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
                                             </div>
-                                            <a href="question.html" class="bli-read-more tt-btn tt-btn-primary">
+                                            <a href="{% url "question:question" %}" class="bli-read-more tt-btn tt-btn-primary">
                                                 <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
                                                 <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
                                             </a>
@@ -361,346 +361,13 @@
                                     </article>
                                     <!-- End blog list item -->
 
-                                    <!-- Begin blog list item
-									========================== -->
-                                    <article class="blog-list-item">
-                                        <!-- Begin blog list item image -->
-                                        <a href="question.html" class="bli-image-wrap" data-cursor="بیشتر<br>بخوانید">
-                                            <figure class="bli-image">
-                                                <img src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/list/compact/blog-list-2.jpg" %}" class="tt-lazy anim-zoomin" alt="تصویر" />
-                                            </figure>
-                                        </a>
-                                        <!-- End blog list item image -->
-
-                                        <!-- Begin blog list item info -->
-                                        <div class="bli-info">
-                                            <div class="bli-categories">
-                                                <a href="blog-archive.html">آموزش ها</a>
-                                                <!-- <a href="blog-archive.html">Uncategorized</a> -->
-                                            </div>
-                                            <h2 class="bli-title"><a href="question.html">از 10 اشتباه بزرگ مبتدیان اجتناب کنید</a></h2>
-                                            <div class="bli-meta">
-                                                <span class="published">21 آبان 1401</span>
-                                                <span class="posted-by">- توسط <a href="blog-archive.html" title="مشاهده همه پست های سورنا شهابی">سورنا شهابی</a></span>
-                                            </div>
-                                            <div class="bli-desc">
-                                                <!-- 3 lines is optimal! -->
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
-                                            </div>
-                                            <a href="question.html" class="bli-read-more tt-btn tt-btn-primary">
-                                                <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
-                                                <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
-                                            </a>
-                                        </div>
-                                        <!-- End blog list item info -->
-                                    </article>
-                                    <!-- End blog list item -->
-
-                                    <!-- Begin blog list item
-									========================== -->
-                                    <article class="blog-list-item">
-                                        <!-- Begin blog list item image -->
-                                        <a href="question.html" class="bli-image-wrap" data-cursor="بیشتر<br>بخوانید">
-                                            <figure class="bli-image">
-                                                <img src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/list/compact/blog-list-3.jpg" %}" class="tt-lazy anim-zoomin" alt="تصویر" />
-                                            </figure>
-                                        </a>
-                                        <!-- End blog list item image -->
-
-                                        <!-- Begin blog list item info -->
-                                        <div class="bli-info">
-                                            <div class="bli-categories">
-                                                <a href="blog-archive.html">سبک زندگی</a>
-                                                <!-- <a href="blog-archive.html">Uncategorized</a> -->
-                                            </div>
-                                            <h2 class="bli-title"><a href="question.html">چرا برخی افراد تقریبا همیشه با این روش پول پس انداز می کنند</a></h2>
-                                            <div class="bli-meta">
-                                                <span class="published">21 آبان 1401</span>
-                                                <span class="posted-by">- توسط <a href="blog-archive.html" title="مشاهده همه پست های سورنا شهابی">سورنا شهابی</a></span>
-                                            </div>
-                                            <div class="bli-desc">
-                                                <!-- 3 lines is optimal! -->
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
-                                            </div>
-                                            <a href="question.html" class="bli-read-more tt-btn tt-btn-primary">
-                                                <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
-                                                <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
-                                            </a>
-                                        </div>
-                                        <!-- End blog list item info -->
-                                    </article>
-                                    <!-- End blog list item -->
-
-                                    <!-- Begin blog list item
-									========================== -->
-                                    <article class="blog-list-item">
-                                        <!-- Begin blog list item image -->
-                                        <a href="question.html" class="bli-image-wrap" data-cursor="بیشتر<br>بخوانید">
-                                            <figure class="bli-image">
-                                                <img src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/list/compact/blog-list-4.jpg" %}" class="tt-lazy anim-zoomin" alt="تصویر" />
-                                            </figure>
-                                        </a>
-                                        <!-- End blog list item image -->
-
-                                        <!-- Begin blog list item info -->
-                                        <div class="bli-info">
-                                            <div class="bli-categories">
-                                                <a href="blog-archive.html">الهام</a>
-                                                <!-- <a href="blog-archive.html">Uncategorized</a> -->
-                                            </div>
-                                            <h2 class="bli-title"><a href="question.html">آیا می خواهید مهارت های خود را افزایش دهید؟ ابتدا باید این را بخوانید</a></h2>
-                                            <div class="bli-meta">
-                                                <span class="published">21 آبان 1401</span>
-                                                <span class="posted-by">- توسط <a href="blog-archive.html" title="مشاهده همه پست های سورنا شهابی">سورنا شهابی</a></span>
-                                            </div>
-                                            <div class="bli-desc">
-                                                <!-- 3 lines is optimal! -->
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
-                                            </div>
-                                            <a href="question.html" class="bli-read-more tt-btn tt-btn-primary">
-                                                <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
-                                                <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
-                                            </a>
-                                        </div>
-                                        <!-- End blog list item info -->
-                                    </article>
-                                    <!-- End blog list item -->
-
-                                    <!-- Begin blog list item
-									========================== -->
-                                    <article class="blog-list-item">
-                                        <!-- Begin blog list item image -->
-                                        <a href="question.html" class="bli-image-wrap" data-cursor="بیشتر<br>بخوانید">
-                                            <figure class="bli-image">
-                                                <img src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/list/compact/blog-list-5.jpg" %}" class="tt-lazy anim-zoomin" alt="تصویر" />
-                                            </figure>
-                                        </a>
-                                        <!-- End blog list item image -->
-
-                                        <!-- Begin blog list item info -->
-                                        <div class="bli-info">
-                                            <div class="bli-categories">
-                                                <a href="blog-archive.html">آموزش ها</a>
-                                                <!-- <a href="blog-archive.html">Uncategorized</a> -->
-                                            </div>
-                                            <h2 class="bli-title"><a href="question.html">رازهایی برای تکمیل سریع و کارآمد پروژه شما</a></h2>
-                                            <div class="bli-meta">
-                                                <span class="published">21 آبان 1401</span>
-                                                <span class="posted-by">- توسط <a href="blog-archive.html" title="مشاهده همه پست های سورنا شهابی">سورنا شهابی</a></span>
-                                            </div>
-                                            <div class="bli-desc">
-                                                <!-- 3 lines is optimal! -->
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
-                                            </div>
-                                            <a href="question.html" class="bli-read-more tt-btn tt-btn-primary">
-                                                <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
-                                                <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
-                                            </a>
-                                        </div>
-                                        <!-- End blog list item info -->
-                                    </article>
-                                    <!-- End blog list item -->
-                                </div>
-                                <!-- End blog list -->
-
-                                <!-- Begin sliding sidebar
-								===========================
-								* Use class "tt-ss-left" to align sidebar to right.
-								-->
-                                <div class="tt-sliding-sidebar-wrap">
-                                    <div class="tt-sliding-sidebar">
-                                        <div class="tt-sliding-sidebar-inner">
-                                            <!-- Begin sidebar widget -->
-                                            <div class="sidebar-widget sidebar-search">
-                                                <h3 class="sidebar-heading">جستجو</h3>
-
-                                                <!-- Begin form (Note: for design purposes only!)
-												================
-												* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
-												* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
-												-->
-                                                <form>
-                                                    <div class="tt-form-btn-inside">
-                                                        <input class="tt-form-control" type="text" id="search" placeholder="چیزی را تایپ کنید و اینتر را بزنید" required />
-                                                        <button type="submit"><i class="fas fa-search"></i></button>
-                                                    </div>
-                                                </form>
-                                                <!-- End form -->
-                                            </div>
-                                            <!-- End sidebar widget -->
-
-                                            <!-- Begin sidebar widget -->
-                                            <div class="sidebar-widget sidebar-categories">
-                                                <h3 class="sidebar-heading">دسته بندی ها</h3>
-                                                <ul class="list-unstyled">
-                                                    <li>
-                                                        <a href="blog-archive.html">طراحی وب <span title="پست های این دسته بندی ">26</span></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-archive.html">منابع <span title="پست های این دسته بندی ">12</span></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-archive.html">آموزش ها <span title="پست های این دسته بندی ">19</span></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-archive.html">رایگان ها <span title="پست های این دسته بندی ">31</span></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-archive.html">الهام <span title="پست های این دسته بندی ">67</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- End sidebar widget -->
-
-                                            <!-- Begin sidebar widget -->
-                                            <div class="sidebar-widget sidebar-post-list">
-                                                <!-- Can be "Recent Posts" or "Popular Posts" etc. -->
-                                                <h3 class="sidebar-heading">پست های پرطرفدار</h3>
-                                                <ul class="list-unstyled">
-                                                    <li>
-                                                        <div class="sidebar-post-data">
-                                                            <h5 class="sidebar-post-title"><a href="question.html">چرا برخی افراد تقریبا همیشه با این روش پول پس انداز می کنند</a></h5>
-                                                            <!-- <span class="sidebar-post-author">توسط: <a href="">سورنا شهابی</a></span> -->
-                                                            <span class="sidebar-post-date">21 آبان 1401</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sidebar-post-data">
-                                                            <h5 class="sidebar-post-title"><a href="question.html">آیا می خواهید مهارت های خود را افزایش دهید؟ ابتدا باید این را بخوانید</a></h5>
-                                                            <!-- <span class="sidebar-post-author">توسط: <a href="">سورنا شهابی</a></span> -->
-                                                            <span class="sidebar-post-date">21 مهر 1401</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sidebar-post-data">
-                                                            <h5 class="sidebar-post-title"><a href="question.html">رازهایی برای تکمیل سریع و کارآمد پروژه شما</a></h5>
-                                                            <!-- <span class="sidebar-post-author">توسط: <a href="">امید کمالی</a></span> -->
-                                                            <span class="sidebar-post-date">21 شهریور 1401</span>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sidebar-post-data">
-                                                            <h5 class="sidebar-post-title"><a href="question.html">چگونه دوستان خود را به دست آوریم و بر مردم تاثیر بگذاریم؟</a></h5>
-                                                            <!-- <span class="sidebar-post-author">توسط: <a href="">امید کمالی</a></span> -->
-                                                            <span class="sidebar-post-date">21 مرداد 1401</span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- End sidebar widget -->
-
-                                            <!-- Begin sidebar widget -->
-                                            <div class="sidebar-widget sidebar-comments-list">
-                                                <h3 class="sidebar-heading">نظرات جدید</h3>
-                                                <ul class="list-unstyled">
-                                                    <li class="sidebar-comment">
-                                                        <div class="sidebar-comment-meta">
-                                                            <div class="sidebar-comment-data">
-                                                                <span class="sidebar-comment-author"><a href="">سورنا شهابی</a></span>
-                                                                <span class="sidebar-comment-date">21 آبان 1401</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sidebar-comment-text">
-                                                            <a href="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ...</a>
-                                                        </div>
-                                                    </li>
-
-                                                    <li class="sidebar-comment">
-                                                        <div class="sidebar-comment-meta">
-                                                            <div class="sidebar-comment-data">
-                                                                <span class="sidebar-comment-author"><a href="">ناصر خجسته</a></span>
-                                                                <span class="sidebar-comment-date">21 آبان 1401</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sidebar-comment-text">
-                                                            <a href="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ...</a>
-                                                        </div>
-                                                    </li>
-
-                                                    <li class="sidebar-comment">
-                                                        <div class="sidebar-comment-meta">
-                                                            <div class="sidebar-comment-data">
-                                                                <span class="sidebar-comment-author"><a href="">زهره وفایی</a></span>
-                                                                <span class="sidebar-comment-date">21 آبان 1401</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sidebar-comment-text">
-                                                            <a href="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ...</a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- End sidebar widget -->
-
-                                            <!-- Begin sidebar widget -->
-                                            <div class="sidebar-widget sidebar-tags">
-                                                <h3 class="sidebar-heading">برچسب ها</h3>
-                                                <div class="sidebar-tags-list">
-                                                    <ul>
-                                                        <li><a href="">#نمونه کارها</a></li>
-                                                        <li><a href="">#چند منظوره</a></li>
-                                                        <li><a href="">#مینیمال</a></li>
-                                                        <li><a href="">#آژانس</a></li>
-                                                        <li><a href="">#خلاقان</a></li>
-                                                        <li><a href="">#فریلنسرها</a></li>
-                                                        <li><a href="">#طراحی</a></li>
-                                                        <li><a href="">#بوت استرپ</a></li>
-                                                        <li><a href="">#واکنشگرا</a></li>
-                                                        <li><a href="">#ساده</a></li>
-                                                        <li><a href="">#خلاقانه</a></li>
-                                                        <li><a href="">#وبلاگ</a></li>
-                                                        <li><a href="">#وردپرس</a></li>
-                                                        <li><a href="">#سیاه و سفید</a></li>
-                                                    </ul>
-                                                </div>
-                                                <!-- /.sidebar-tags-list -->
-                                            </div>
-                                            <!-- End sidebar widget -->
-
-                                            <!-- Begin sidebar widget -->
-                                            <div class="sidebar-widget sidebar-meta">
-                                                <h3 class="sidebar-heading">متا</h3>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="">ورود</a></li>
-                                                    <li><a href="">ورودی های RSS</a></li>
-                                                    <li><a href="">نظرات RSS</a></li>
-                                                </ul>
-                                            </div>
-                                            <!-- End sidebar widget -->
-                                        </div>
-                                        <!-- /.tt-sliding-sidebar-inner -->
-                                    </div>
-                                    <!-- /.tt-sliding-sidebar -->
-
-                                    <!-- Begin sliding sidebar trigger -->
-                                    <div class="tt-sliding-sidebar-trigger hide-cursor">
-                                        <span class="tt-ss-icon"><i class="fas fa-bars"></i></span>
-                                        <span class="tt-ss-icon-close"><i class="fas fa-times"></i></span>
-                                    </div>
-                                    <!-- End sliding sidebar trigger -->
-
-                                    <!-- Close overlay -->
-                                    <div class="tt-sliding-sidebar-close cursor-close"></div>
-                                </div>
-                                <!-- End sliding sidebar -->
-
-                                <!-- Begin tt-pagination
-								=========================
-								* Use class "tt-pagin-center" to align center.
-								-->
+                                   
                                 <div class="tt-pagination anim-fadeinup">
                                     <div class="tt-pagin-prev">
                                         <a href="" class="tt-pagin-item magnetic-item"><i class="fas fa-chevron-right"></i></a>
                                     </div>
                                     <div class="tt-pagin-numbers">
                                         <a href="#" class="tt-pagin-item magnetic-item active">1</a>
-                                        <a href="" class="tt-pagin-item magnetic-item">2</a>
-                                        <a href="" class="tt-pagin-item magnetic-item">3</a>
-                                        <a href="" class="tt-pagin-item magnetic-item">4</a>
                                     </div>
                                     <div class="tt-pagin-next">
                                         <a href="" class="tt-pagin-item tt-pagin-next magnetic-item"><i class="fas fa-chevron-left"></i></a>
@@ -725,12 +392,12 @@
 								* Use class "tt-pn-stroke" to enable title stroke style.
 								-->
                                 <div class="tt-page-nav tt-pn-stroke">
-                                    <a href="portfolio-grid-creative.html" class="tt-pn-link anim-fadeinup" data-cursor="<i class='fas fa-arrow-left'></i>">
-                                        <div class="tt-pn-title">نمونه کارها</div>
-                                        <div class="tt-pn-hover-title">نمونه کارها</div>
+                                    <a href="https://itech-co.ir" class="tt-pn-link anim-fadeinup" data-cursor="<i class='fas fa-arrow-left'></i>">
+                                        <div class="tt-pn-title">دپارتمان آموزشی...</div>
+                                        <div class="tt-pn-hover-title">دپارتمان آموزشی...</div>
                                     </a>
                                     <!-- /.tt-pn-link -->
-                                    <div class="tt-pn-subtitle anim-fadeinup">کارهای منتخب</div>
+                                    <div class="tt-pn-subtitle anim-fadeinup">دوره‌های منتخب</div>
                                 </div>
                                 <!-- End page nav -->
                             </div>
