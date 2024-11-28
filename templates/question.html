@@ -268,6 +268,7 @@
                             <!-- Begin page header image
 							============================= -->
                             <div class="ph-image">
+{#                                 todo aks avaz shavad#}
                                 <div class="ph-image-inner">
                                     <img src="{% static "/img/page-header/blog-ph/blog-ph-1.jpg" %}" alt="تصویر" />
                                 </div>
@@ -284,18 +285,13 @@
                                     <!-- <a href="blog-archive.html" class="ph-category">Uncategorized</a> -->
                                 </div>
                                 <h1 class="ph-caption-title">
-                                    <div class="ph-appear">آزمون مسابقه جاوا اندروید</div>
+                                    <div class="ph-appear">{{ question.title }}</div>
                                     <!-- You can use <br> to break a text line if needed -->
                                 </h1>
                                 <div class="ph-caption-title-ghost">
                                     <div class="ph-appear">مسابقه</div>
                                 </div>
-                                <div class="ph-meta">
-                                    <div class="ph-appear">
-                                        <span class="ph-meta-published">21 آبان 1401</span>
-                                        <span class="ph-meta-posted-by">توسط: <a href="blog-archive.html" title="محمدحسین مهارلویی">محمدحسین مهارلویی</a></span>
-                                    </div>
-                                </div>
+
                                 <!-- /.ph-meta -->
                             </div>
                             <!-- End page header caption -->
@@ -329,146 +325,80 @@
 						============================
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
-                        <div class="tt-section">
-                            <div class="tt-section-inner tt-wrap max-width-900">
-                                <!-- Begin blog post
-								===================== -->
-                                <article class="tt-blog-post lightgallery">
-                                    <!-- Begin blog post content -->
-                                    <div class="tt-blog-post-content">
-                                        <p class="text-xlg">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز.
-                                        </p>
-
-                                        <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-                                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
-                                            رایانه ای علی الخصوص طراحان خلاقی.
-                                        </p>
-
-                                        <h3>عنوان</h3>
-
-                                        <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-                                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده.
-                                        </p>
-
-                                        <!-- Begin post image -->
-                                        <figure class="tt-blog-post-image">
-                                            <a href="{% static "/img/blog/single/blog-post-1.jpg" %}" class="tt-bpi-link lg-trigger" data-exthumbnail="assets/img/blog/single/thumb/img-4.jpg" data-cursor="مشاهده">
-                                                <img class="tt-lazy" src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/single/blog-post-1.jpg" %}" alt="تصویر" />
-                                            </a>
-                                            <figcaption class="tt-bpi-caption">عکس توسط <a href="http://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></figcaption>
-                                        </figure>
-                                        <!-- End post image -->
-
-                                        <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-                                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
-                                            رایانه ای علی الخصوص طراحان خلاقی.
-                                        </p>
-
-                                        <blockquote class="open-quote">
-                                            "زمان شما محدود است، پس آن را با زندگی دیگران هدر ندهید. گرفتار عقاید تعصبی نشوید که زندگی با نتایج تفکر دیگران است."
-                                            <footer>استیو جابز</footer>
-                                        </blockquote>
-
-                                        <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
-                                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
-                                            رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
-                                        </p>
-                                    </div>
+<div class="tt-section">
+    <div class="tt-section-inner tt-wrap max-width-900">
+        <!-- Begin blog post -->
+        <article class="tt-blog-post lightgallery">
+            <!-- Begin blog post content -->
+            <div class="tt-blog-post-content">
+                <blockquote class="open-quote inline-block">
+                    "{{ question.question }}"
+                </blockquote>
+            </div>
+        </article>
+    <hr>
                                     <!-- End blog post content -->
 
-                                    <!-- Begin blog post tags -->
-                                    <div class="tt-blog-post-tags">
-                                        <ul>
-                                            <li><span>برچسب ها:</span></li>
-                                            <li><a href="blog-archive.html">#عکاسی</a></li>
-                                            <li><a href="blog-archive.html">#سفر</a></li>
-                                            <li><a href="blog-archive.html">#حرکت</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- End blog post tags -->
-
+      
                                     <!-- Begin blog post share (Note: for design purposes only!)
 									===========================
 									* Use class "bss-fixed-bottom" to enable post share fixed bottom position (effect only on small screens!!!).
 									-->
                                     
                                     <!-- End post comment form -->
-                                    <form id="tt-post-comment-form" class="tt-form-filled anim-fadeinup">
-                                        <h4 class="tt-post-comment-form-heading">نظر بدهید:</h4>
-                                        <div class="tt-row">
-                                            <div class="tt-col-lg-6">
-                                                <div class="tt-form-group">
-                                                    <label>نام <span class="required">*</span></label>
-                                                    <input class="tt-form-control" id="84990245" type="text" placeholder="" required />
-                                                </div>
-                                            </div>
-                                            <div class="tt-col-lg-6">
-                                                <div class="tt-form-group">
-                                                    <label>نام خانوادگی <span class="required">*</span></label>
-                                                    <input class="tt-form-control" id="84990245+1" type="text" placeholder="" required />
-                                                </div>
-                                            </div>
-                                            <!-- /.col -->
-
-                                            <div class="tt-col-lg-6">
-                                                <div class="tt-form-group">
-                                                    <label>شماره تماس<span class="small text-gray">*</span></label>
-                                                    <input class="tt-form-control" id="19833520+1" type="tel" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="09..."  required/>
-                                                </div>
-                                            </div>
-                                            <div class="tt-col-lg-6">
-                                                <div class="tt-form-group">
-                                                    <label>نشانی ایمیل <span class="small text-gray">*</span></label>
-                                                    <input class="tt-form-control" id="19833520" type="email" placeholder=""  required/>
-                                                </div>
-                                            </div>
-                                            <!-- /.col -->
-                                            
-                                        </div>
-                                        <!-- /.row -->
-                                        
-                                        <div class="tt-form-group">
-                                            <label>نظر <span class="required">*</span></label>
-                                            <textarea class="tt-form-control" id="30945381" rows="6" placeholder="" required></textarea>
-                                        </div>
-                                        
-                                        <div class="tt-col-lg-3">
-                                            <div class="tt-form-group">
-                                                <label> فایل<span class="small text-gray">*</span></label>
-                                                <!-- <div class="fileupload" style=" background-color: rgb(136 136 136 / 15%);color: #fff; cursor: pointer; position: relative; text-align: center; height: 56px;"> -->
-                                                <div class="tt-form-control" style="cursor: pointer; position: relative;align-items: center; display: flex;justify-content: center;">
-                                                بارگذاری
-                                                <input class="tt-form-control" id="19833520+2" type="file" placeholder=""  required style=" cursor: pointer;opacity: 0;position:absolute;top: 0;right: 0; width: 100%;height: 100%;" />
-                                            </div>
-                                            </div>
-                                        </div>
-                                        <small class="tt-form-text">فیلدهایی که با ستاره (*) مشخص شدند الزامی هستند!</small>
-
-                                        <!-- Begin post comment reminder -->
-                                        <div class="tt-post-comment-reminder">
-                                            <div class="tt-form-check tt-form-check-inline">
-                                                <input type="checkbox" id="notify-me-new-comment" />
-                                                <label for="notify-me-new-comment">وقتی این نظر پاسخی دریافت کرد، به من ایمیل بزنید.</label>
-                                            </div>
-                                            <div class="tt-form-check">
-                                                <input type="checkbox" id="notify-me-new-post" />
-                                                <label for="notify-me-new-post">از طریق ایمیل پست های جدید را به من اطلاع دهید.</label>
-                                            </div>
-                                        </div>
-                                        <!-- End post comment reminder -->
-
-                                        <!-- Begin post comment submit button -->
-                                        <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
-                                            <div data-hover="ارسال نظر">ارسال نظر</div>
-                                            <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
-                                        </button>
-                                        <!-- End post comment submit button -->
-                                    </form>
+<form
+    id="tt-post-comment-form"
+    class="tt-form-filled anim-fadeinup"
+    method="post"
+    enctype="multipart/form-data"
+    action="{% url 'answer_create' question.slug %}"
+>
+    {% csrf_token %}
+    <h4 class="tt-post-comment-form-heading">پاسخ بدهید:</h4>
+    <div class="tt-row">
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>نام <span class="required">*</span></label>
+                <input class="tt-form-control" name="name" type="text" required />
+            </div>
+        </div>
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>نام خانوادگی <span class="required">*</span></label>
+                <input class="tt-form-control" name="lastname" type="text" required />
+            </div>
+        </div>
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>شماره تماس<span class="small text-gray">*</span></label>
+                <input class="tt-form-control" name="phone" type="tel" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="09..." required />
+            </div>
+        </div>
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>نشانی ایمیل <span class="small text-gray">*</span></label>
+                <input class="tt-form-control" name="email" type="email" required />
+            </div>
+        </div>
+    </div>
+    <div class="tt-col-lg-3">
+        <div class="tt-form-group">
+            <label>فایل<span class="small text-gray">*</span></label>
+            <div class="tt-form-control" style="cursor: pointer; position: relative;align-items: center; display: flex;justify-content: center;">
+                بارگذاری
+                <input class="tt-form-control" name="file" type="file" required style="cursor: pointer; opacity: 0; position: absolute; top: 0; right: 0; width: 100%; height: 100%;" />
+            </div>
+        </div>
+    </div>
+    <div class="tt-form-group">
+        <label>پاسخ <span class="required">*</span></label>
+        <textarea class="tt-form-control" name="answer" rows="6" required></textarea>
+    </div>
+    <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
+        <div data-hover="ارسال پاسخ">ارسال پاسخ</div>
+        <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
+    </button>
+</form>
                             
 
                                 </div>

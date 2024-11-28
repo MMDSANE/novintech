@@ -327,37 +327,42 @@
                                 <div id="blog-list" class="bli-compact bli-image-cropped">
                                     <!-- Begin blog list item
 									========================== -->
-                                    <article class="blog-list-item">
-                                        <!-- Begin blog list item image -->
-                                        <a href="{% url "question:question" %}" class="bli-image-wrap" data-cursor="سوال<br>مشاهده">
-                                            <figure class="bli-image">
-                                                <img src="{% static "/img/low-qlt-thumb.jpg" %}" data-src="{% static "/img/blog/list/compact/blog-list-1.jpg" %}" class="tt-lazy anim-zoomin" alt="تصویر" />
-                                            </figure>
-                                        </a>
-                                        <!-- End blog list item image -->
-
-                                        <!-- Begin blog list item info -->
-                                        <div class="bli-info">
-                                            <div class="bli-categories">
-                                                <a href="{% url "question:question" %}">Python</a>
-                                                <!-- <a href="blog-archive.html">Uncategorized</a> -->
-                                            </div>
-                                            <h2 class="bli-title"><a href="{% url "question:question" %}">مسابقه موش و پنیر هوشمند</a></h2>
-                                            <div class="bli-meta">
-                                                <span class="published">21 آبان 1401</span>
-                                                <span class="posted-by">- توسط <a href="{% url "question:question" %}" title="محمدحسین مهارلویی">محمدحسین مهارلویی</a></span>
-                                            </div>
-                                            <div class="bli-desc">
-                                                <!-- 3 lines is optimal! -->
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                                                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد...
-                                            </div>
-                                            <a href="{% url "question:question" %}" class="bli-read-more tt-btn tt-btn-primary">
-                                                <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
-                                                <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
+                                    <article class="blog-list">
+                                        <!-- Loop through questions -->
+                                        {% for question in questions %}
+                                        <div class="blog-list-item">
+                                            <!-- Begin blog list item image -->
+                                            <a href="{% url 'question' question.slug %}" class="bli-image-wrap" data-cursor="سوال<br>مشاهده">
+                                                <figure class="bli-image">
+                                                    <img src="{% static 'img/low-qlt-thumb.jpg' %}" 
+                                                         data-src="{{ question.pic.url }}" 
+                                                         class="tt-lazy anim-zoomin" 
+                                                         alt="{{ question.title }}" />
+                                                </figure>
                                             </a>
+                                            <!-- End blog list item image -->
+                                    
+                                            <!-- Begin blog list item info -->
+                                            <div class="bli-info">
+                                                <div class="bli-categories">
+                                                    <a href="{% url 'question' question.slug %}">Python</a>
+                                                </div>
+                                                <h2 class="bli-title">
+                                                    <a href="{% url 'question' question.slug %}">{{ question.title }}</a>
+                                                </h2>
+                                                <div class="bli-desc">
+                                                    {{ question.question|truncatechars:150 }}
+                                                </div>
+                                                <a href="{% url 'question' question.slug %}" class="bli-read-more tt-btn tt-btn-primary">
+                                                    <div data-hover="بیشتر بخوانید">بیشتر بخوانید</div>
+                                                    <span class="tt-btn-icon"><i class="fas fa-arrow-left"></i></span>
+                                                </a>
+                                            </div>
+                                            <!-- End blog list item info -->
                                         </div>
-                                        <!-- End blog list item info -->
+                                        {% empty %}
+                                        <p>هیچ سوالی در حال حاضر موجود نیست.</p>
+                                        {% endfor %}
                                     </article>
                                     <!-- End blog list item -->
 
