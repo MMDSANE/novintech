@@ -1,0 +1,71 @@
+<form id="tt-post-comment-form" class="tt-form-filled anim-fadeinup">
+    <h4 class="tt-post-comment-form-heading">نظر بدهید:</h4>
+    <div class="tt-row">
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>نام <span class="required">*</span></label>
+                <input class="tt-form-control" id="84990245" type="text" placeholder="" required />
+            </div>
+        </div>
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>نام خانوادگی <span class="required">*</span></label>
+                <input class="tt-form-control" id="84990245+1" type="text" placeholder="" required />
+            </div>
+        </div>
+        <!-- /.col -->
+
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>شماره تماس<span class="small text-gray">*</span></label>
+                <input class="tt-form-control" id="19833520+1" type="tel" pattern="[0]{1}[9]{1}[0-9]{9}" placeholder="09..."  required/>
+            </div>
+        </div>
+        <div class="tt-col-lg-6">
+            <div class="tt-form-group">
+                <label>نشانی ایمیل <span class="small text-gray">*</span></label>
+                <input class="tt-form-control" id="19833520" type="email" placeholder=""  required/>
+            </div>
+        </div>
+        <!-- /.col -->
+        
+    </div>
+    <!-- /.row -->
+    
+    <div class="tt-form-group">
+        <label>نظر <span class="required">*</span></label>
+        <textarea class="tt-form-control" id="30945381" rows="6" placeholder="" required></textarea>
+    </div>
+    
+    <div class="tt-col-lg-3">
+        <div class="tt-form-group">
+            <label> فایل<span class="small text-gray">*</span></label>
+            <!-- <div class="fileupload" style=" background-color: rgb(136 136 136 / 15%);color: #fff; cursor: pointer; position: relative; text-align: center; height: 56px;"> -->
+            <div class="tt-form-control" style="cursor: pointer; position: relative;align-items: center; display: flex;justify-content: center;">
+            بارگذاری
+            <input class="tt-form-control" id="19833520+2" type="file" placeholder=""  required style=" cursor: pointer;opacity: 0;position:absolute;top: 0;right: 0; width: 100%;height: 100%;" />
+        </div>
+        </div>
+    </div>
+    <small class="tt-form-text">فیلدهایی که با ستاره (*) مشخص شدند الزامی هستند!</small>
+
+    <!-- Begin post comment reminder -->
+    <div class="tt-post-comment-reminder">
+        <div class="tt-form-check tt-form-check-inline">
+            <input type="checkbox" id="notify-me-new-comment" />
+            <label for="notify-me-new-comment">وقتی این نظر پاسخی دریافت کرد، به من ایمیل بزنید.</label>
+        </div>
+        <div class="tt-form-check">
+            <input type="checkbox" id="notify-me-new-post" />
+            <label for="notify-me-new-post">از طریق ایمیل پست های جدید را به من اطلاع دهید.</label>
+        </div>
+    </div>
+    <!-- End post comment reminder -->
+
+    <!-- Begin post comment submit button -->
+    <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
+        <div data-hover="ارسال نظر">ارسال نظر</div>
+        <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
+    </button>
+    <!-- End post comment submit button -->
+</form>

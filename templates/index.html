@@ -1073,16 +1073,9 @@
 								* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
 								* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
 								-->
-                                <form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
-                                    <!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
-                                    <input type="hidden" name="project_name" value="yourwebsiteaddress.com" />
-                                    <!-- Change value to your site name -->
-                                    <input type="hidden" name="admin_email" value="your@email.com" />
-                                    <!-- Change value to your valid email address (where a message will be sent) -->
-                                    <input type="hidden" name="form_subject" value="پیام از yourwebsiteaddress.com" />
-                                    <!-- Change value to your own message subject -->
-                                    <!-- End Hidden Required Fields -->
-
+                                <form id="tt-contact-form" action="/contact/" method="post" class="tt-form-filled anim-fadeinup">
+                                    {% csrf_token %}
+                                    
                                     <div class="tt-row">
                                         <div class="tt-col-md-6">
                                             <div class="tt-form-group">
@@ -1091,7 +1084,7 @@
                                             </div>
                                         </div>
                                         <!-- /.tt-col -->
-
+                                
                                         <div class="tt-col-md-6">
                                             <div class="tt-form-group">
                                                 <label>نشانی ایمیل <span class="required">*</span></label>
@@ -1101,35 +1094,25 @@
                                         <!-- /.tt-col -->
                                     </div>
                                     <!-- /.tt-row -->
-
+                                
                                     <div class="tt-form-group">
                                         <label>موضوع <span class="required">*</span></label>
                                         <input class="tt-form-control" type="text" name="Subject" placeholder="" required />
                                     </div>
-
-                                    <!-- <div class="tt-form-group">
-										<label>یک گزینه را انتخاب کنید <span class="required">*</span></label>
-										<select class="tt-form-control" name="option" required>
-											<option value="" disabled selected>لطفا یک گزینه را انتخاب کنید</option>
-											<option value="Say Hello">سلام کنید</option>
-											<option value="New Project">پروژه جدید</option>
-											<option value="Feedback">بازخورد</option>
-											<option value="Other">سایر</option>
-										</select>
-									</div> -->
-
+                                
                                     <div class="tt-form-group">
                                         <label>پیام شما <span class="required">*</span></label>
                                         <textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
                                     </div>
-
+                                
                                     <small class="tt-form-text"><em>فیلدهایی که با ستاره (*) مشخص شدند الزامی هستند!</em></small>
-
+                                
                                     <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
                                         <div data-hover="ارسال پیام">ارسال پیام</div>
                                         <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
                                     </button>
                                 </form>
+
                                 <!-- End form -->
                             </div>
                             <!-- /.tt-section-inner -->

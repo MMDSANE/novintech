@@ -3591,22 +3591,32 @@
 	// ========================================
 
 	// E-mail Ajax Send
-	$('#tt-contact-form').submit(function () {
-		// Change (your contact form ID)
+	$('#tt-contact-form').submit(function (e) {
+		e.preventDefault(); // جلوگیری از ارسال فرم به صورت معمول
+
 		var th = $(this);
+
 		$.ajax({
 			type: 'POST',
-			url: 'mail.php', // Change (mail.php path)
-			data: th.serialize(),
-		}).done(function () {
-			alert('متشکریم. پیام شما ارسال شد!');
-			setTimeout(function () {
-				// Done Functions
-				th.trigger('reset');
-			}, 800);
+			url: '/contact/',  // مسیر فرم تماس
+			data: th.serialize(),  // داده‌های فرم به صورت serialize شده
+			success: function (response) {
+				if (response.success) {
+					alert('متشکریم. پیام شما ارسال شد!');
+					setTimeout(function () {
+						th.trigger('reset');  // فرم پس از ارسال پیام پاک می‌شود
+					}, 800);
+				} else {
+					alert('ارسال پیام با مشکل مواجه شد. لطفاً دوباره تلاش کنید.');
+				}
+			},
+			error: function (xhr, errmsg, err) {
+				alert("خطا در ارسال فرم: " + errmsg);  // در صورت بروز خطا
+			}
 		});
-		return false;
+		return false;  // جلوگیری از ارسال مجدد فرم به صورت عادی
 	});
+
 
 	// ======================================================================
 	// Template style switch
