@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views  # از ویوهایی که ایجاد کرده‌اید استفاده می‌کنیم
+from . import views
 
 app_name = "landing_home"
 urlpatterns = [

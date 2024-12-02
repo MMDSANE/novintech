@@ -8,8 +8,8 @@ class ContactMessage(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="تاریخ ارسال")
 
     class Meta:
-        verbose_name = "پیام تماس"
-        verbose_name_plural = "پیام‌های تماس"
+        verbose_name = "Cooperations & Calls"
+        verbose_name_plural = "Cooperations & Calls"
 
     def __str__(self):
         return f"{self.name} - {self.subject}"
