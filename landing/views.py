@@ -15,14 +15,13 @@ def contact_view(request):
         # دریافت داده‌ها از فرم
         name = request.POST.get('Name')
         email = request.POST.get('Email')
+        phone = request.POST.get('Phone')
         subject = request.POST.get('Subject')
         message = request.POST.get('Message')
 
-        # بررسی اینکه هیچ فیلدی خالی نباشد
-        if not name or not email or not subject or not message:
+        if not name or not email or not subject or not message or not phone:
             return JsonResponse({'success': False, 'message': 'لطفاً تمام فیلدها را پر کنید.'})
 
-        # اعتبارسنجی ایمیل
         if '@' not in email:
             return JsonResponse({'success': False, 'message': 'لطفاً یک ایمیل معتبر وارد کنید.'})
 
@@ -31,6 +30,7 @@ def contact_view(request):
             ContactMessage.objects.create(
                 name=name,
                 email=email,
+                phone=phone,
                 subject=subject,
                 message=message
             )
