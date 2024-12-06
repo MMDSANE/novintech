@@ -78,7 +78,7 @@ WSGI_APPLICATION = "core.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'novintech455_carl',
+        'NAME': os.path.join(BASE_DIR, 'novintech455_carl'),
         'USER': 'novintech455_carl',
         'PASSWORD': 'JnqUjItT4o17',
         'HOST': 'services.irn9.chabokan.net',
@@ -118,7 +118,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # تنظیمات دایرکتوری استاتیک در زمان تولید
-STATIC_ROOT=os.path.join(BASE_DIR, "staticfiles")
+STATIC_ROOT=os.path.join(os.path.dirname(BASE_DIR), "staticfiles")
 
 # تنظیمات دایرکتوری رسانه‌ها (media files)
 MEDIA_URL = '/media/'
