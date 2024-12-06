@@ -136,3 +136,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # تنظیم صفحه خطای 404
 handler404 = 'landing.views.c404'
+
+ALLOWED_HOSTS = ['novintech.chbk.app']
