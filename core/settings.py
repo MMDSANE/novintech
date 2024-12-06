@@ -123,7 +123,6 @@ STATIC_ROOT=os.path.join(BASE_DIR, "staticfiles")
 # تنظیمات دایرکتوری رسانه‌ها (media files)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
