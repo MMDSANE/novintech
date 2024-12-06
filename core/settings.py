@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-sn1ocxcfw3@@u4d&k7pu=_bd4u4r_32oh*ehzyf1ts%rupsiqu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['novintech.chbk.app', 'https://projects.itech-co.ir.', '127.0.0.1']
+ALLOWED_HOSTS = ['novintech.chbk.app', 'projects.itech-co.ir.', '127.0.0.1']
 
 # CSRF trusted origins - اضافه کردن دامنه‌ها و آی‌پی‌های مجاز
 CSRF_TRUSTED_ORIGINS = [
