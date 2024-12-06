@@ -114,6 +114,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, images)
 # تنظیمات دایرکتوری استاتیک در زمان تولید
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'static'
 
 # تنظیمات دایرکتوری رسانه‌ها (media files)
@@ -121,7 +122,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
 # تنظیم دایرکتوری استاتیک‌ها
-STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
