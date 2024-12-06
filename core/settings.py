@@ -77,14 +77,15 @@ WSGI_APPLICATION = "core.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv("DB_ENGINE"),
-        'NAME': os.getenv("DB_DATABASE"),
-        'USER': os.getenv("DB_USERNAME"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'HOST': os.getenv("DB_HOST"),
-        'PORT':  os.getenv("DB_PORT"),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'novintech455_carl',
+        'USER': 'novintech455_carl',
+        'PASSWORD': 'JnqUjItT4o17',
+        'HOST': 'services.irn9.chabokan.net',
+        'PORT': '16584',
     }
 }
+
 
 
 # Password validation
