@@ -118,12 +118,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
-# تنظیم دایرکتوری استاتیک‌ها
-STATICFILES_DIRS = [BASE_DIR / 'static']
-
-# تنظیمات دایرکتوری استاتیک در زمان تولید
-STATIC_ROOT=os.path.join(BASE_DIR, "staticfiles")
 # Default primary key field type
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
