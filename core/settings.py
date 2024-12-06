@@ -14,8 +14,8 @@ SECRET_KEY = "django-insecure-sn1ocxcfw3@@u4d&k7pu=_bd4u4r_32oh*ehzyf1ts%rupsiqu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 
+ALLOWED_HOSTS = ['novintech.chbk.app' , '127.0.0.1',]
 
 # Application definition
 
@@ -137,4 +137,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # تنظیم صفحه خطای 404
 handler404 = 'landing.views.c404'
 
-ALLOWED_HOSTS = ['novintech.chbk.app']
+
