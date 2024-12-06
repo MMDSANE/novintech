@@ -78,7 +78,7 @@ WSGI_APPLICATION = "core.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.path.join(BASE_DIR, 'novintech455_carl'),
+        'NAME': BASE_DIR / 'novintech455_carl',
         'USER': 'novintech455_carl',
         'PASSWORD': 'JnqUjItT4o17',
         'HOST': 'services.irn9.chabokan.net',
